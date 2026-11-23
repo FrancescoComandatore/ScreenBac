@@ -1,7 +1,7 @@
-# Screenbac: define bacterial taxonomy using the RecA protein marker
+# ScreenBac: define bacterial taxonomy using the RecA protein marker
 
-## What does Screenbac do?
-Screenbac is a fast, easy to use tool to assign bacterial taxonomy starting from raw reads, FASTA nucleotide file (such as genome assemblies) or FASTA protein sequences files. Screenbac takes the input, extracts RecA protein sequences and assigns the bacterial taxonomy to each sequence using a Random Forest algorithm. If raw reads are given, the tool also provides bacterial abundances using the reads coverage. More information about the tool is available (for the moment) at:
+## What does ScreenBac do?
+ScreenBac is a fast, easy to use tool to assign bacterial taxonomy starting from raw reads, FASTA nucleotide file (such as genome assemblies) or FASTA protein sequences files. ScreenBac takes the input, extracts RecA protein sequences and assigns the bacterial taxonomy to each sequence using a Random Forest algorithm. If raw reads are given, the tool also provides bacterial abundances using the reads coverage. More information about the tool is available (for the moment) at:
 
   RecA is a reliable marker for bacterial taxonomy, even in the Candidate Phyla Radiation
 Lodovico Sterzi, Simona Panelli, Clara Bonaiti, Stella Papaleo, Giorgia Bettoni, Enza D’Auria, Gianvincenzo Zuccotti, Francesco Comandatore
@@ -10,7 +10,7 @@ bioRxiv 2024.06.21.600076; doi: https://doi.org/10.1101/2024.06.21.600076
 ![image](https://github.com/user-attachments/assets/8a84e3e4-b3b7-4cc7-a15d-c2b578a72a65)
 
 ## How to install Screenbac
-Screenbac is a Linux-based software. The tool is available for installation by conda or mamba (suggested!).
+ScreenBac is a Linux-based software. The tool is available for installation by conda or mamba (suggested!).
 
 **Conda**:
 ```
