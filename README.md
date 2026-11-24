@@ -94,19 +94,15 @@ screenbac -itype proteins -f path/to/proteins/*.faa -o example_proteins
 It is also possible to customise some important options. 
 For example, the user can ask the tool to:
 
-1) Obtain the coverage of each annotated RecA sequence
-```
-screenbac -r1 path/to/reads/*_1.fastq.gz -r2 path/to/reads/*_2.fastq.gz -o example_reads -q
-```
-3) Customise the taxonomic depth to reach in the assignment (default is genus).
+1) Customise the taxonomic depth to reach in the assignment (default is genus).
 ```
 screenbac -r1 path/to/reads/*_1.fastq.gz -r2 path/to/reads/*_2.fastq.gz -o example_reads -tax order
 ```
-3) Disable the reannotation step of unclassified sequences using DIAMOND against a curated reference database
+2) Disable the reannotation step of unclassified sequences using DIAMOND against a curated reference database
 ```
 screenbac -r1 path/to/reads/*_1.fastq.gz -r2 path/to/reads/*_2.fastq.gz -o example_reads -D
 ```
-4) If the user wants to obtain the coverage of each annotated RecA sequence has a nucleotide FASTA file as input (e.g. metagenome assembly), it is possible to add a tab-delimited plain text file with the name of the input and the paths to the corresponding reads files. 
+3) Quantify taxa from the coverage of each annotated RecA sequence from a nucleotide FASTA input file (e.g. metagenome assembly), adding to add a tab-delimited plain text file with the name of the FASTA input file and the paths to the corresponding reads files. 
 ```
 screenbac -itype nucleotide -f path/to/nucleotide/*.fasta -o example_nucleotide -q -r reads_path_file.tab
 ```
