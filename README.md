@@ -14,11 +14,27 @@ conda create -n screenbac  #create virtual environment
 conda activate screenbac  #activate the virtual environment
 conda install -c conda-forge -c bioconda -c r lodovicosterzi::screenbac  #install the software from the repository
 ```
+Or in one command:
+```
+conda create -n screenbac \
+    -c conda-forge \
+    -c bioconda \
+    -c r \
+    lodovicosterzi::screenbac
+```
+
 **Mamba**:
 ```
 mamba create -n screenbac  #create virtual environment
 mamba activate screenbac  #activate the virtual environment
 mamba install -c conda-forge -c bioconda lodovicosterzi::screenbac
+```
+Or in one command:
+```
+mamba create -n screenbac \
+    -c conda-forge \
+    -c bioconda \
+    lodovicosterzi::screenbac
 ```
 
 ## How to run Screenbac
